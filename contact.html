@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SiteQom</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Flatpickr for date picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="logo-preloader">
+                <img src="img/logos/logoicon-removebg.png" alt="SiteQom Logo">
+            </div>
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                                            <img src="img/logos/full_logo.png" alt="SiteQom Logo" class="logo-img">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Let's discuss how we can help bring your vision to life</p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Send a Message</h3>
+                    <p>Fill out our contact form and we'll get back to you as soon as possible.</p>
+                    <a href="#contact-form" class="option-link">Contact Form</a>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Schedule a Consultation</h3>
+                    <p>Book a free 30-minute consultation to discuss your project in detail.</p>
+                    <a href="#booking-section" class="option-link">Book Now</a>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>For immediate assistance, feel free to give us a call.</p>
+                    <a href="tel:+212500000000" class="option-link">+212 500-000-000</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Send Us a Message</h2>
+                <p>Let us know how we can help with your project</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Office Location</h4>
+                            <p>Marrakesh, Morocco</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:aitaliyassir55@gmail.com">aitaliyassir55@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p><a href="tel:+212500000000">+212 625498375</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday-Friday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="email-form" action="https://formsubmit.co/aitaliyassir55@gmail.com" method="POST">
+                        <!-- FormSubmit.co configuration -->
+                        <input type="hidden" name="_subject" value="New Contact Request from SiteQom Website">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        <input type="hidden" name="_autoresponse"
+                            value="Thank you for scheduling a consultation with SiteQom! Your booking is confirmed, and we look forward to discussing your project. You'll receive a calendar invitation shortly.">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Please select...</option>
+                                <option value="Custom Website">Custom Website Development</option>
+                                <option value="E-commerce">E-commerce Solution</option>
+                                <option value="Business System">Business System Integration</option>
+                                <option value="Admin Dashboard">Custom Admin Dashboard</option>
+                                <option value="Maintenance">Website Maintenance</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Project Budget (MAD)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Please select...</option>
+                                <option value="Less than 5,000">Less than 4,000 MAD</option>
+                                <option value="5,000 - 10,000">4,000 - 10,000 MAD</option>
+                                <option value="10,000 - 20,000">10,000 - 20,000 MAD</option>
+                                <option value="20,000+">20,000+ MAD</option>
+                                <option value="Not Sure">Not Sure</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" d="contact-submit-btn" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking-section" class="booking-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Schedule a Consultation</h2>
+                <p>Book a free 30-minute consultation to discuss your project</p>
+            </div>
+
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h3>What to Expect</h3>
+                    <p>During our consultation, we'll discuss:</p>
+                    <ul class="booking-list">
+                        <li>Your business goals and requirements</li>
+                        <li>Website functionality and features</li>
+                        <li>Design preferences and brand identity</li>
+                        <li>Timeline and budget considerations</li>
+                        <li>Answering any questions you may have</li>
+                    </ul>
+                    <p>After the call, we'll send you a follow-up email with a summary and next steps.</p>
+
+                    <div class="booking-cta">
+                        <p>Prefer email? Contact us directly:</p>
+                        <a href="mailto:aitaliyassir55@gmail.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> aitaliyassir55@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="booking-calendar">
+                    <form id="booking-form" action="https://formsubmit.co/aitaliyassir55@gmail.com" method="POST">
+                        <!-- FormSubmit.co configuration -->
+                        <input type="hidden" name="_subject" value="New Consultation Booking from SiteQom Website">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://yourwebsite.com/booking-confirmed.html">
+
+                        <div class="form-group">
+                            <label for="booking-name">Full Name *</label>
+                            <input type="text" id="booking-name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-email">Email Address *</label>
+                            <input type="email" id="booking-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-phone">Phone Number *</label>
+                            <input type="tel" id="booking-phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-date">Preferred Date *</label>
+                            <input type="text" id="booking-date" name="date" class="datepicker" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-time">Preferred Time *</label>
+                            <select id="booking-time" name="time" required>
+                                <option value="">Select a time...</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-project">Brief Project Description</label>
+                            <textarea id="booking-project" name="project_description" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" id="booking-submit-btn" class="btn btn-primary">
+                                <i class="fas fa-calendar-check"></i> Book Consultation
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Optional) -->
+    <section class="map-section">
+        <div class="map-container">
+            <!-- Add your Google Maps iframe or embed code here -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212680.53207546065!2d-7.723081711481172!3d33.57240572158416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1715015428111!5m2!1sen!2sus"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about working with us</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens after I submit the contact form?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After submitting the contact form, you'll receive an automatic confirmation email. We'll then
+                            review your inquiry and respond within 24-48 business hours to discuss your project needs or
+                            answer any questions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does the consultation process work?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once you book a consultation, you'll receive a confirmation email with a calendar invite and
+                            meeting details. The consultation is a 30-minute video call where we'll discuss your project
+                            requirements, answer your questions, and determine if we're a good fit for your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you work with clients outside of Morocco?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we work with clients globally. We conduct meetings via video call and use collaborative
+                            tools to maintain clear communication regardless of location or time zone differences.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What information should I prepare before our consultation?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It's helpful to have a general idea of your project goals, timeline, budget, and any specific
+                            features you need. Examples of websites you like can also be valuable. Don't worry if you
+                            don't have everything figured out—that's what the consultation is for!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Online Presence?</h2>
+            <p>Let's work together to create a website that helps your business grow</p>
+            <a href="#contact-form" class="btn btn-light">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <img src="img/logos/full_logo.png" alt="SiteQom Logo" class="logo-img">
+                    </a>
+                    <p>SiteQom creates beautiful, functional websites for businesses across Morocco, helping them
+                        establish a powerful online presence.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><a href="mailto:aitaliyassir55@gmail.com">aitaliyassir55@gmail.com</a></p>
+                    <p><a href="tel:+212500000000">+212 625498375</a></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SiteQom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</body>
+
+</html>
