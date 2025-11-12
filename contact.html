@@ -134,14 +134,11 @@
                 </div>
 
                 <div class="contact-form">
-                    <form id="email-form" action="https://formsubmit.co/aitaliyassir55@gmail.com" method="POST">
-                        <!-- FormSubmit.co configuration -->
-                        <input type="hidden" name="_subject" value="New Contact Request from SiteQom Website">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="thank-you.html">
-                        <input type="hidden" name="_autoresponse"
-                            value="Thank you for scheduling a consultation with SiteQom! Your booking is confirmed, and we look forward to discussing your project. You'll receive a calendar invitation shortly.">
+                    <form id="email-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms configuration -->
+                        <input type="hidden" name="access_key" value="e5600e3e-fc13-4d56-a7dd-f76e17571b74">
+                        <input type="hidden" name="subject" value="New Contact Request from SiteQom Website">
+                        <input type="hidden" name="redirect" value="thank-you.html">
 
                         <div class="form-row">
                             <div class="form-group">
@@ -236,12 +233,11 @@
                 </div>
 
                 <div class="booking-calendar">
-                    <form id="booking-form" action="https://formsubmit.co/aitaliyassir55@gmail.com" method="POST">
-                        <!-- FormSubmit.co configuration -->
-                        <input type="hidden" name="_subject" value="New Consultation Booking from SiteQom Website">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://yourwebsite.com/booking-confirmed.html">
+                    <form id="booking-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms configuration -->
+                        <input type="hidden" name="access_key" value="e5600e3e-fc13-4d56-a7dd-f76e17571b74">
+                        <input type="hidden" name="subject" value="New Consultation Booking from SiteQom Website">
+                        <input type="hidden" name="redirect" value="booking-confirmed.html">
 
                         <div class="form-group">
                             <label for="booking-name">Full Name *</label>
