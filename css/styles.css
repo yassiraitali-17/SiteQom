@@ -555,26 +555,38 @@ footer {
     
     .mobile-menu-btn {
         display: block;
+        color: #817572;
+        cursor: pointer;
+        z-index: 100;
     }
-    
+
     .nav-links {
         display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 60px;
         left: 0;
         right: 0;
+        bottom: 0;
         background-color: white;
         flex-direction: column;
         padding: 20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        z-index: 999;
     }
-    
+
     .nav-links.active {
         display: flex;
     }
-    
+
     .nav-links li {
-        margin: 10px 0;
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+        padding: 10px 0;
+        display: block;
     }
     
     .hero .container {
