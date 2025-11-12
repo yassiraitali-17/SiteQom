@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - SiteQom</title>
+    <!-- Favicon links -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logos/icon_logo.png">
+    <link rel="shortcut icon" href="img/logos/icon_logo.png">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -131,14 +134,12 @@
                 </div>
 
                 <div class="contact-form">
-                    <form id="email-form" action="https://formsubmit.co/aitaliyassir55@gmail.com" method="POST">
-                        <!-- FormSubmit.co configuration -->
-                        <input type="hidden" name="_subject" value="New Contact Request from SiteQom Website">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="thank-you.html">
-                        <input type="hidden" name="_autoresponse"
-                            value="Thank you for scheduling a consultation with SiteQom! Your booking is confirmed, and we look forward to discussing your project. You'll receive a calendar invitation shortly.">
+                    <form id="email-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms configuration -->
+                        <input type="hidden" name="access_key" value="e5600e3e-fc13-4d56-a7dd-f76e17571b74">
+                        <input type="hidden" name="subject" value="New Contact Request from SiteQom Website">
+                        <input type="hidden" name="redirect" value="thank-you.html">
+                        <input type="hidden" name="from_name" value="SiteQom Contact Form">
 
                         <div class="form-row">
                             <div class="form-group">
@@ -233,12 +234,12 @@
                 </div>
 
                 <div class="booking-calendar">
-                    <form id="booking-form" action="https://formsubmit.co/aitaliyassir55@gmail.com" method="POST">
-                        <!-- FormSubmit.co configuration -->
-                        <input type="hidden" name="_subject" value="New Consultation Booking from SiteQom Website">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://yourwebsite.com/booking-confirmed.html">
+                    <form id="booking-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms configuration -->
+                        <input type="hidden" name="access_key" value="e5600e3e-fc13-4d56-a7dd-f76e17571b74">
+                        <input type="hidden" name="subject" value="New Consultation Booking from SiteQom Website">
+                        <input type="hidden" name="redirect" value="booking-confirmed.html">
+                        <input type="hidden" name="from_name" value="SiteQom Booking Form">
 
                         <div class="form-group">
                             <label for="booking-name">Full Name *</label>
@@ -372,33 +373,90 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <a href="index.html" class="logo footer-logo">
-                        <img src="img/logos/full_logo.png" alt="SiteQom Logo" class="logo-img">
+            <div class="footer-grid">
+                <div class="footer-col footer-about-col">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="img/logos/full_logo.png" alt="SiteQom Logo" class="footer-logo-img">
                     </a>
-                    <p>SiteQom creates beautiful, functional websites for businesses across Morocco, helping them
-                        establish a powerful online presence.</p>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><a href="mailto:aitaliyassir55@gmail.com">aitaliyassir55@gmail.com</a></p>
-                    <p><a href="tel:+212500000000">+212 625498375</a></p>
-                </div>
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <p>SiteQom creates beautiful, functional websites for businesses across Morocco. We specialize in building digital solutions that help businesses establish a powerful online presence and achieve their goals.</p>
+                    <div class="footer-social-links">
+                        <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                        <li><a href="services.html">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <p class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:aitaliyassir55@gmail.com">aitaliyassir55@gmail.com</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+212625498375">+212 625498375</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Marrakesh, Morocco
+                    </p>
+                    <a href="contact.html" class="footer-cta-btn">Get Started</a>
+                </div>
             </div>
+
+            <div class="footer-divider"></div>
+
             <div class="footer-bottom">
                 <p>&copy; 2025 SiteQom. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="divider">•</span>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Contact Toggle Button -->
+    <div class="floating-contact-btn" id="floatingContactBtn">
+        <div class="contact-toggle-main">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="contact-options">
+            <a href="https://wa.me/+212625498375?text=Hello%20SiteQom" class="contact-option whatsapp-option" target="_blank" title="Chat on WhatsApp">
+                <div class="option-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <span class="option-label">WhatsApp</span>
+            </a>
+            <a href="mailto:aitaliyassir55@gmail.com" class="contact-option email-option" title="Send Email">
+                <div class="option-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <span class="option-label">Email</span>
+            </a>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>

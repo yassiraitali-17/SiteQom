@@ -469,3 +469,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Floating Contact Button Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const floatingBtn = document.getElementById('floatingContactBtn');
+  const toggleMain = document.querySelector('.contact-toggle-main');
+  
+  if (floatingBtn && toggleMain) {
+    toggleMain.addEventListener('click', function(e) {
+      e.stopPropagation();
+      floatingBtn.classList.toggle('active');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!floatingBtn.contains(e.target)) {
+        floatingBtn.classList.remove('active');
+      }
+    });
+    
+    const contactOptions = document.querySelectorAll('.contact-option');
+    contactOptions.forEach(option => {
+      option.addEventListener('click', function() {
+        floatingBtn.classList.remove('active');
+      });
+    });
+  }
+});

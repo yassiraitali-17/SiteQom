@@ -27,6 +27,7 @@
     
     <!-- Favicon links -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/logos/icon_logo.png">
+    <link rel="shortcut icon" href="img/logos/icon_logo.png">
     
     <!-- Page title -->
     <title>SiteQom | Professional Web Design & Development</title>
@@ -138,24 +139,24 @@
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <!-- Card 1 -->
-                    <img src="img/Mockup_Pics/Project1.png" alt="Atlas Rentals">
+                    <!-- Card 1: Oussaid Tourisme -->
+                    <img src="img/Mockup_Pics/project4.png" alt="Oussaid Tourisme">
                     <div class="portfolio-details">
-                        <h3>Car Rental Service</h3>
-                        <p>Budget-friendly car rental platform</p>
-                        <a href="https://rentcar-service.netlify.app" class="view-project" target="_blank">
+                        <h3>Oussaid Tourisme</h3>
+                        <p>Premium tourism agency website in Morocco</p>
+                        <a href="https://oussaidtourisme.com/" class="view-project" target="_blank">
                             <span>View Project</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <!-- Card 2 -->
-                    <img src="img/Mockup_Pics/project4.png" alt="Morocco Drives">
+                    <!-- Card 2: Merrakcehy Tours -->
+                    <img src="img/Mockup_Pics/project4.png" alt="Merrakcehy Tours">
                     <div class="portfolio-details">
-                        <h3>Travel Toursim </h3>
-                        <p>Travel Toursim agencey website in Marrakech </p>
-                        <a href="https://merrakechytours.netlify.app/" class="view-project" target="_blank">
+                        <h3>Merrakcehy Tours</h3>
+                        <p>Travel and tourism agency website in Marrakech</p>
+                        <a href="https://merrakechytours.com/" class="view-project" target="_blank">
                             <span>View Project</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -258,35 +259,92 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <a href="index.html" class="logo">
-                        <img src="img/logos/full_logo.png" alt="SiteQom Logo" class="logo-img">
+            <div class="footer-grid">
+                <div class="footer-col footer-about-col">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="img/logos/full_logo.png" alt="SiteQom Logo" class="footer-logo-img">
                     </a>
-                    <p>SiteQom creates beautiful, functional websites for businesses across Morocco, with special
-                        expertise in the car rental industry.</p>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><a href="mailto:contact@SiteQom.com">contact@SiteQom.com</a></p>
-                    <p><a href="tel:+212500000000">+212 625498375</a></p>
-                </div>
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <p>SiteQom creates beautiful, functional websites for businesses across Morocco. We specialize in building digital solutions that help businesses establish a powerful online presence and achieve their goals.</p>
+                    <div class="footer-social-links">
+                        <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                        <li><a href="services.html">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <p class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:aitaliyassir55@gmail.com">aitaliyassir55@gmail.com</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+212625498375">+212 625498375</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Marrakesh, Morocco
+                    </p>
+                    <a href="contact.html" class="footer-cta-btn">Get Started</a>
+                </div>
             </div>
+
+            <div class="footer-divider"></div>
+
             <div class="footer-bottom">
                 <p>&copy; 2025 SiteQom. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="divider">•</span>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <!-- Floating Contact Toggle Button -->
+    <div class="floating-contact-btn" id="floatingContactBtn">
+        <div class="contact-toggle-main">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="contact-options">
+            <a href="https://wa.me/+212625498375?text=Hello%20SiteQom" class="contact-option whatsapp-option" target="_blank" title="Chat on WhatsApp">
+                <div class="option-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <span class="option-label">WhatsApp</span>
+            </a>
+            <a href="mailto:aitaliyassir55@gmail.com" class="contact-option email-option" title="Send Email">
+                <div class="option-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <span class="option-label">Email</span>
+            </a>
+        </div>
+    </div>
+
     <a href="#" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
