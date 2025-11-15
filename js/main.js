@@ -399,6 +399,15 @@ document.addEventListener('DOMContentLoaded', function() {
       date: 'March 2025',
       link: 'https://merrakechytours.netlify.app/'
     },
+    'powertech': {
+      title: 'Powertech',
+      image: 'https://cdn.builder.io/api/v1/image/assets%2F9a93815a2ca64217a8991909b6f8bf7f%2Fcf206cbe11b044c7b2f855ce41a90619?format=webp&width=800',
+      description: 'Professional electrician website showcasing services, expertise, and emergency contact options. Features a clean design focused on building trust with potential customers in Austin.',
+      client: 'Powertech Electrical Services',
+      services: 'Web Design, Service Showcase, Emergency Contact System',
+      date: 'April 2025',
+      link: 'https://powertechaustin.netlify.app/'
+    },
     // Add more projects as needed
   };
 
